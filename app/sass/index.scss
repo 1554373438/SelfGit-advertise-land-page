@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import "_mixins",
+"_reset",
+"_grid";
+html,
+body {
+  width: 100%;
+  // font-size: 62.5%;
+  overflow-x: hidden;
+  font-size: 14px;
+  background: #c3dffd;
+}
+a{
+  text-decoration:none;
+}
+
+.item {
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .reg-btn {
+    width:100%;
+    position: absolute;
+    bottom: 14%;
+    text-align: center;
+    .btn {
+      display: inline-block;
+      padding:0 25px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 auto 25px;
+      background: #ff581e;
+      border-radius: 50px;
+      a{
+        color:#fff;
+        font-size: 20px;
+      }
+    }
+    .whiter{
+      a{
+        font-size: 14px;
+        letter-spacing:2px;
+        color:#fff;
+        border-bottom: 1px solid #fff;
+        &.sport{
+          color:#ff581e;
+          border-bottom: 1px solid #ff581e;
+        }
+      }
+    }
+  }
+}
+
+
+
